@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHC Arcade & Hub | William H. Chan Studios Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Discover a curated collection of interactive web games, educational apps, and web utilities crafted by William H. Chan Studios. Play Sudoku 16, US States Explorer, Chinese Chess, Quick Photo Album, and more.">
+  <meta name="keywords" content="William H. Chan, WHC Studios, web games, Sudoku 16, US States Explorer, Guess the Country, Chinese Chess, Xiangqi, Song List, Quick Photo Album, HTML5 games, portfolio">
+  <meta name="author" content="William H. Chan">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://williamhchan-hub.netlify.app/">
+  <meta property="og:title" content="WHC Arcade & Hub | William H. Chan Studios Portfolio">
+  <meta property="og:description" content="Explore a custom portfolio of interactive web games and utilities including Sudoku 16, US States Explorer, Chinese Chess, and more. Clean, fast, and free to play.">
+  <meta property="og:image" content="https://williamhchan-hub.netlify.app/assets/og-cover.png">
+  <meta property="og:site_name" content="William H. Chan Studios">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://williamhchan-hub.netlify.app/">
+  <meta property="twitter:title" content="WHC Arcade & Hub | William H. Chan Studios Portfolio">
+  <meta property="twitter:description" content="Explore a custom portfolio of interactive web games and utilities including Sudoku 16, US States Explorer, Chinese Chess, and more. Clean, fast, and free to play.">
+  <meta property="twitter:image" content="https://williamhchan-hub.netlify.app/assets/og-cover.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Orbs -->
+  <div class="decor-orb orb-1"></div>
+  <div class="decor-orb orb-2"></div>
+  <div class="decor-orb orb-3"></div>
+
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="container header-content">
+      <div class="brand">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="2" />
+            <path d="M6 12h4m-2-2v4m7-2h.01M17 12h.01" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>WHC Studios</h1>
+          <span class="sub-logo">Arcade & Apps Hub</span>
+        </div>
+      </div>
+      
+      <p class="tagline">Explore a custom suite of high-fidelity logic puzzles, educational trivia, classic strategy, and productive tools.</p>
+      
+      <div class="stats-badge-container">
+        <span class="stats-badge"><span class="indicator green"></span>6 Live Projects</span>
+        <span class="stats-badge">100% Free & Open-Source</span>
+        <span class="stats-badge">No Ad Interruptions</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container main-content">
+    
+    <!-- Filter and Search Controls -->
+    <section class="controls-panel" aria-label="Search and filter controls">
+      <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search games & tools..." aria-label="Search games and tools">
+        <kbd class="search-kbd" title="Press forward slash to focus search">/</kbd>
+      </div>
+
+      <nav class="categories-filter" aria-label="Filter by category">
+        <button class="filter-btn active" data-category="all">
+          All <span class="badge" id="count-all">6</span>
+        </button>
+        <button class="filter-btn" data-category="games">
+          Games <span class="badge" id="count-games">3</span>
+        </button>
+        <button class="filter-btn" data-category="apps">
+          Apps <span class="badge" id="count-apps">3</span>
+        </button>
+      </nav>
+    </section>
+
+    <!-- Games/Apps Dynamic Grid -->
+    <section class="grid-section" aria-label="Featured Games and Apps">
+      <div class="grid-container" id="grid-container">
+        <!-- Static Fallbacks for SEO & JS Disabled Browsers -->
+        <article class="project-card" data-category="games">
+          <div class="card-glow" style="background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 60%);"></div>
+          <div class="card-header">
+            <div class="card-icon-wrapper">
+              <img src="assets/portfolio/sudoku-icon.png" alt="Sudoku 16 Icon" class="card-icon-img">
+            </div>
+            <span class="category-tag tag-games">Games</span>
+          </div>
+          <div class="card-body">
+            <h3>Sudoku 16</h3>
+            <p class="description">Challenge your mind with an expanded 16x16 grid sudoku puzzle for advanced logic thinkers.</p>
+            <div class="tags-container">
+              <span class="feature-tag">Logic</span>
+              <span class="feature-tag">16x16 Grid</span>
+              <span class="feature-tag">Puzzles</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://super-sudoku-16.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Play Now
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="apps">
+          <div class="card-glow" style="background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.15), transparent 60%);"></div>
+          <div class="card-header">
+            <div class="card-icon-wrapper">
+              <img src="assets/portfolio/us-states-icon.png" alt="US States Explorer Icon" class="card-icon-img">
+            </div>
+            <span class="category-tag tag-apps">Apps</span>
+          </div>
+          <div class="card-body">
+            <h3>US States Explorer</h3>
+            <p class="description">Learn and master US states, capitals, flags, and seals through interactive exploration.</p>
+            <div class="tags-container">
+              <span class="feature-tag">Interactive Map</span>
+              <span class="feature-tag">Education</span>
+              <span class="feature-tag">Geography</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://game-us-states-explorer.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Open App
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="games">
+          <div class="card-glow" style="background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.15), transparent 60%);"></div>
+          <div class="card-header">
+            <div class="card-icon-wrapper">
+              <img src="assets/portfolio/guess-country-icon.png" alt="Guess the Country Icon" class="card-icon-img">
+            </div>
+            <span class="category-tag tag-games">Games</span>
+          </div>
+          <div class="card-body">
+            <h3>Guess the Country</h3>
+            <p class="description">Test your global knowledge by guessing countries based on map locations, flags, and facts.</p>
+            <div class="tags-container">
+              <span class="feature-tag">Trivia</span>
+              <span class="feature-tag">Quiz Game</span>
+              <span class="feature-tag">Geography</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://guess-thecountry.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Play Now
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="games">
+          <div class="card-glow" style="background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.15), transparent 60%);"></div>
+          <div class="card-header">
+            <div class="card-icon-wrapper">
+              <img src="assets/portfolio/chinese-chess-icon.png" alt="Chinese Chess Icon" class="card-icon-img">
+            </div>
+            <span class="category-tag tag-games">Games</span>
+          </div>
+          <div class="card-body">
+            <h3>Chinese Chess / Xiangqi</h3>
+            <p class="description">Play the ancient, traditional Chinese strategy game of warfare and tactical maneuvers.</p>
+            <div class="tags-container">
+              <span class="feature-tag">Classic Board</span>
+              <span class="feature-tag">Strategy</span>
+              <span class="feature-tag">Tactics</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://game-chinese-chess.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Play Now
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="apps">
+          <div class="card-glow" style="background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.15), transparent 60%);"></div>
+          <div class="card-header">
+            <div class="card-icon-wrapper">
+              <img src="assets/portfolio/songlist-icon.png" alt="WHC Studio Song List Icon" class="card-icon-img">
+            </div>
+            <span class="category-tag tag-apps">Apps</span>
+          </div>
+          <div class="card-body">
+            <h3>WHC Studio Song List</h3>
+            <p class="description">Browse, filter, and search through the official music catalog and song list of William H. Chan Studios.</p>
+            <div class="tags-container">
+              <span class="feature-tag">Music Database</span>
+              <span class="feature-tag">Search Tool</span>
+              <span class="feature-tag">Utilities</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://williamhchanstudiosonglist.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Open App
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="apps">
+          <div class="card-glow" style="background: radial-gradient(circle at top right, rgba(236, 72, 153, 0.15), transparent 60%);"></div>
+          <div class="card-header">
+            <div class="card-icon-wrapper">
+              <img src="assets/portfolio/slideshow-icon.jpg" alt="Quick Photo Album Icon" class="card-icon-img">
+            </div>
+            <span class="category-tag tag-apps">Apps</span>
+          </div>
+          <div class="card-body">
+            <h3>Quick Photo Album</h3>
+            <p class="description">Create, organize, and view stunning photography albums and custom slideshows in your browser.</p>
+            <div class="tags-container">
+              <span class="feature-tag">SlideShow</span>
+              <span class="feature-tag">Photo Viewer</span>
+              <span class="feature-tag">Utilities</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://app-slideshow.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Open App
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- No Results State -->
+      <div id="no-results" class="no-results-container hidden">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <line x1="8" y1="11" x2="14" y2="11"></line>
+        </svg>
+        <p>No games or tools found matching "<span id="search-query-display"></span>"</p>
+        <button id="clear-search-btn" class="btn btn-secondary">Clear Filter & Search</button>
+      </div>
+    </section>
+
+    <!-- Cross-Promotion Embed Preview Section -->
+    <section class="preview-section" aria-label="Developer Integration Kit">
+      <div class="preview-card">
+        <div class="preview-card-header">
+          <div class="badge-accent">Developer Integration Kit</div>
+          <h3>Universal Cross-Promotion Banner</h3>
+        </div>
+        <p>Include this self-contained script at the end of the <code>&lt;body&gt;</code> tag of any game or app in the portfolio. It dynamically adds a non-obtrusive, responsive top bar pointing players back to this central hub.</p>
+        
+        <div class="code-box">
+          <pre><code>&lt;script src="https://williamhchan-hub.netlify.app/whc-banner.js"&gt;&lt;/script&gt;</code></pre>
+          <button id="copy-code-btn" class="copy-btn" aria-label="Copy code snippet">
+            <span class="copy-text">Copy Snippet</span>
+            <svg class="copy-check-icon hidden" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 William H. Chan Studios. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://williamhchan.com" target="_blank" rel="noopener noreferrer">Official Website</a>
+        <span class="bullet">•</span>
+        <a href="https://github.com/williamhchan" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <!-- Render banner directly inside index.html for testing and self-promotion demonstration -->
+  <script src="whc-banner.js"></script>
+</body>
+</html>

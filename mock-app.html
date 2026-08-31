@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Sudoku 16 (Game Integration Test)</title>
+  <style>
+    /* Styling to simulate a game host page with distinct fonts/colors to check for clashing */
+    body {
+      margin: 0;
+      font-family: serif; /* Serifs to test that banner font is NOT overridden */
+      background-color: #f0fdf4; /* Light green body to check light background compatibility */
+      color: #166534;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .game-board {
+      width: 300px;
+      height: 300px;
+      border: 4px solid #166534;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 8px;
+    }
+    .cell {
+      background-color: #dcfce7;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar will be programmatically prepended here by whc-banner.js -->
+
+  <h2>Mock Sudoku 16 Integration</h2>
+  <div class="game-board">
+    <div class="cell">1</div>
+    <div class="cell">6</div>
+    <div class="cell">1</div>
+    <div class="cell">5</div>
+    <div class="cell">3</div>
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">9</div>
+    <div class="cell">4</div>
+    <div class="cell">8</div>
+    <div class="cell">7</div>
+    <div class="cell">2</div>
+    <div class="cell">5</div>
+    <div class="cell">9</div>
+    <div class="cell">6</div>
+    <div class="cell">1</div>
+  </div>
+  <p style="margin-top: 20px; font-size: 14px;">The cross-promotion banner should be visible at the top, or as a floating launcher if dismissed.</p>
+
+  <!-- Load the cross promotion banner -->
+  <script src="whc-banner.js"></script>
+</body>
+</html>
