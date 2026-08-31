@@ -17,7 +17,7 @@
     #whc-promo-banner-root {
       all: initial;
       box-sizing: border-box;
-      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       position: relative;
       z-index: 2147483647; /* Maximum possible z-index to overlay all pages */
       display: block;
@@ -184,7 +184,7 @@
   rootNode.innerHTML = `
     <div class="whc-banner-container whc-banner-collapsed" id="whc-banner-element">
       <div class="whc-banner-content">
-        <span class="whc-banner-tag">WHC Studio</span>
+        <span class="whc-banner-tag">WILLIAMHCHANSTUDIO</span>
         <span class="whc-banner-message">Looking for more? Explore our library of web games & apps!</span>
         <a href="${HUB_URL}" target="_blank" rel="noopener" class="whc-banner-btn" id="whc-banner-link-element">
           Browse Hub
@@ -202,7 +202,7 @@
       </button>
     </div>
     
-    <div class="whc-launcher-tab" id="whc-launcher-element" title="Browse WHC Studio Games & Apps">
+    <div class="whc-launcher-tab" id="whc-launcher-element" title="Browse WILLIAMHCHANSTUDIO Games & Apps">
       <span class="whc-launcher-icon">🎮</span>
       <span>More Games</span>
     </div>
