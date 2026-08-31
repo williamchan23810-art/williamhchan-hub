@@ -81,7 +81,7 @@ const PROJECTS_DATA = [
     themeColor: "#ec4899",
     glowColor: "rgba(236, 72, 153, 0.15)",
     tags: ["SlideShow", "Photo Viewer", "Utilities"],
-    logoImage: "assets/portfolio/slideshow-icon.jpg"
+    logoImage: "assets/portfolio/slideshow-icon.png"
   }
 ];
 
